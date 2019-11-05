@@ -7,8 +7,11 @@ package notify
 
 import "context"
 
-type Mode string
-
 type Notifier interface {
 	Notify(ctx context.Context) (bool, error)
+}
+
+// 重试通知
+func Retry(noticce Notifier, count int) error {
+	return nil
 }
