@@ -1,0 +1,12 @@
+from: luobo@ecook.cn
+to: 1564413823@qq.com
+cc:
+Bcc:
+smarthost:
+  host: smtp.exmail.qq.com
+  port: 465
+auth_username: luobo@ecook.cn
+auth_password: VVU7BTFuTFa963CC
+authSecret:
+html:
+text:
