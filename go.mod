@@ -1,4 +1,4 @@
-module notify
+module github.com/ww156/notify
 
 go 1.13
 

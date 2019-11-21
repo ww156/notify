@@ -11,7 +11,7 @@ import (
 )
 
 var (
-	sugar *zap.SugaredLogger
+	Logger *zap.Logger
 )
 
 func init() {
@@ -29,5 +29,5 @@ func init() {
 	if err != nil {
 		panic(err)
 	}
-	sugar = logger.Sugar()
+	Logger = logger
 }

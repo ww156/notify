@@ -11,7 +11,20 @@ type Notifier interface {
 	Notify(ctx context.Context) (bool, error)
 }
 
-// 重试通知
-func Retry(noticce Notifier, count int) error {
+// 重试
+func Retry(notice Notifier, count int) error {
+	ok, err := notice.Notify(context.Background())
+	if ok {
+		return nil
+	}
+	for i := 0; i < count; i++ {
+		ok, err = notice.Notify(context.Background())
+		if ok {
+			return nil
+		}
+	}
+	if err != nil {
+		return err
+	}
 	return nil
 }
