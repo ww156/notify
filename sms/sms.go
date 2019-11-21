@@ -8,7 +8,7 @@ package sms
 import (
 	"context"
 	"log"
-	"notify/config"
+	"github.com/ww156/notify/config"
 )
 
 type Sms struct {

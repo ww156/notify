@@ -8,7 +8,7 @@ package dingtalk
 import (
 	"context"
 	"github.com/go-kit/kit/log"
-	"notify/config"
+	"github.com/ww156/notify/config"
 	"os"
 	"testing"
 )

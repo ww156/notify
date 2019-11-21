@@ -14,8 +14,8 @@ import (
 	"io/ioutil"
 	"net/http"
 	"net/url"
-	"notify/config"
-	"notify/template"
+	"github.com/ww156/notify/config"
+	"github.com/ww156/notify/template"
 	"time"
 )
 
